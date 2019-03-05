@@ -1,7 +1,7 @@
 from flask import Flask,render_template, request, redirect, url_for,flash
 ,jsonify
 # import CRUD Operations 
-from catalog-database import Base, Category, item,User
+from catalog-database import Base, Category, Item,User
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker,
 
