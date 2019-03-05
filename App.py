@@ -32,7 +32,7 @@ session = DBSession()
 def showcategory( category_id):
 category=session.quary(Category).filter_by(id=category_id).one()
 items=session.quary(item).filter_by(category_id=category_id)
-return render_template (category.html,category=category,items=item)
+return render_template (catalog.html,category=category,items=item)
 
 
 
